@@ -260,7 +260,7 @@ protocol: http2
 
 ingress:
   - hostname: \$ARGO_DOMAIN
-    service: http://localhost:8080
+    service: http://localhost:8001
 EOF
       [ -n "\${SSH_DOMAIN}" ] && cat >> tunnel.yml << EOF
   - hostname: \$SSH_DOMAIN
